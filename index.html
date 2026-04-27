@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>  Beach Resort - Your Tropical Escape</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <i class="fas fa-umbrella-beach"></i>
+          <span>  Beach</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#rooms" class="nav-link">Rooms</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#booking" class="nav-link">Book Now</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">  Beach Resort</h1>
+        <p class="hero-tagline">Where the Ocean Meets Luxury</p>
+        <p class="hero-description">
+          Experience the ultimate tropical getaway with pristine beaches,
+          world-class amenities, and unforgettable sunsets.
+        </p>
+        <a href="#booking" class="btn btn-primary">Book Your Stay</a>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Welcome to  </h2>
+          <p class="section-subtitle">Your perfect escape from the ordinary</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Nestled along the pristine shores of the Andaman Sea,  
+              Beach Resort offers an unparalleled tropical experience. Our
+              resort combines natural beauty with modern luxury, creating the
+              perfect sanctuary for travelers seeking relaxation, adventure, and
+              unforgettable memories.
+            </p>
+            <p>
+              Wake up to the gentle sound of waves, spend your days lounging by
+              our infinity pool, and witness breathtaking sunsets from your
+              private balcony. Every moment at   Beach is designed to
+              rejuvenate your soul.
+            </p>
+          </div>
+          <div class="amenities-grid">
+            <div class="amenity-card">
+              <i class="fas fa-swimming-pool"></i>
+              <h3>Infinity Pool</h3>
+              <p>Stunning oceanfront pool with panoramic views</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fas fa-utensils"></i>
+              <h3>Fine Dining</h3>
+              <p>Exquisite cuisine with fresh seafood daily</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fas fa-spa"></i>
+              <h3>Luxury Spa</h3>
+              <p>Rejuvenating treatments and massages</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fas fa-water"></i>
+              <h3>Water Sports</h3>
+              <p>Snorkeling, diving, and kayaking</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fas fa-wifi"></i>
+              <h3>Free WiFi</h3>
+              <p>High-speed internet throughout</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fas fa-concierge-bell"></i>
+              <h3>24/7 Service</h3>
+              <p>Round-the-clock concierge assistance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Rooms & Suites</h2>
+          <p class="section-subtitle">
+            Luxury accommodations with stunning views
+          </p>
+        </div>
+        <div class="rooms-grid">
+          <div class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop"
+                alt="Deluxe Sea View Room"
+              />
+              <div class="room-badge">Popular</div>
+            </div>
+            <div class="room-content">
+              <h3>Deluxe Sea View</h3>
+              <p>
+                Spacious room with private balcony and stunning ocean views.
+                Perfect for couples seeking romance.
+              </p>
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> King Size Bed</li>
+                <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+                <li><i class="fas fa-tv"></i> Smart TV</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price">$199</span>
+                  <span class="period">/ night</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="btn btn-secondary"
+                  data-room="Deluxe Sea View"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop"
+                alt="Premium Beach Villa"
+              />
+              <div class="room-badge">Best Value</div>
+            </div>
+            <div class="room-content">
+              <h3>Premium Beach Villa</h3>
+              <p>
+                Luxurious villa with direct beach access, private pool, and
+                exclusive amenities.
+              </p>
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> King Size Bed</li>
+                <li><i class="fas fa-swimming-pool"></i> Private Pool</li>
+                <li><i class="fas fa-umbrella-beach"></i> Beach Access</li>
+                <li><i class="fas fa-coffee"></i> Mini Bar</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price">$399</span>
+                  <span class="period">/ night</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="btn btn-secondary"
+                  data-room="Premium Beach Villa"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop"
+                alt="Family Suite"
+              />
+            </div>
+            <div class="room-content">
+              <h3>Family Suite</h3>
+              <p>
+                Spacious suite perfect for families with separate living area
+                and kids' amenities.
+              </p>
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> 2 Queen Beds</li>
+                <li><i class="fas fa-couch"></i> Living Area</li>
+                <li><i class="fas fa-child"></i> Kids Friendly</li>
+                <li><i class="fas fa-utensils"></i> Kitchenette</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price">$299</span>
+                  <span class="period">/ night</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="btn btn-secondary"
+                  data-room="Family Suite"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop"
+                alt="Honeymoon Suite"
+              />
+              <div class="room-badge">Romantic</div>
+            </div>
+            <div class="room-content">
+              <h3>Honeymoon Suite</h3>
+              <p>
+                Ultimate romantic getaway with champagne, rose petals, and
+                private dining.
+              </p>
+              <ul class="room-features">
+                <li><i class="fas fa-bed"></i> King Size Bed</li>
+                <li><i class="fas fa-hot-tub"></i> Jacuzzi</li>
+                <li><i class="fas fa-glass-cheers"></i> Champagne</li>
+                <li><i class="fas fa-concierge-bell"></i> Butler Service</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price">$499</span>
+                  <span class="period">/ night</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="btn btn-secondary"
+                  data-room="Honeymoon Suite"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-subtitle">Glimpses of  </p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop"
+              alt="Beach View"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop"
+              alt="Resort Pool"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop"
+              alt="Luxury Room"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop"
+              alt="Restaurant"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item large">
+            <img
+              src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&h=600&fit=crop"
+              alt="Sunset View"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?w=800&h=600&fit=crop"
+              alt="Spa Treatment"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop"
+              alt="Water Sports"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop"
+              alt="Ocean View"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Guest Reviews</h2>
+          <p class="section-subtitle">What our guests say about us</p>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Absolutely magical! The beach was pristine, the staff was
+              incredibly attentive, and our villa had the most stunning sunset
+              views. We're already planning our return trip!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                alt="Sarah Johnson"
+              />
+              <div>
+                <h4>Sarah Johnson</h4>
+                <span>New York, USA</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The perfect honeymoon destination! The spa treatments were
+              divine, and the private dining on the beach was unforgettable.
+                Beach Resort exceeded all expectations."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+                alt="Michael Chen"
+              />
+              <div>
+                <h4>Michael Chen</h4>
+                <span>Singapore</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Best family vacation we've ever had! The kids loved the water
+              sports, and we appreciated the spacious family suite. The staff
+              went above and beyond to make our stay special."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+                alt="Emma Williams"
+              />
+              <div>
+                <h4>Emma Williams</h4>
+                <span>London, UK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Find Us</h2>
+          <p class="section-subtitle">Your   awaits</p>
+        </div>
+        <div class="location-content">
+          <div class="location-info">
+            <div class="location-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>
+                  123   Beach Road<br />Andaman Islands, Thailand 83110
+                </p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <i class="fas fa-plane"></i>
+              <div>
+                <h4>Getting Here</h4>
+                <p>
+                  30 minutes from Phuket International Airport<br />Complimentary
+                  airport transfers available
+                </p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Check-in / Check-out</h4>
+                <p>Check-in: 2:00 PM<br />Check-out: 12:00 PM</p>
+              </div>
+            </div>
+            <a
+              href="https://www.google.com/maps/dir// +Beach+Resort"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15356.806935628563!2d80.4215239!3d15.793313349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a443000000001%3A0x632fd24d77cf437!2zQ2hpcmFsYSBCZWFjaCwg4LCa4LGA4LCw4LC-4LCyIOCwrOCxgOCwmuCxjQ!5e0!3m2!1sen!2sin!4v1774798054208!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Book Your Stay</h2>
+          <p class="section-subtitle">Reserve your tropical escape today</p>
+        </div>
+        <div class="booking-container">
+          <div class="booking-info">
+            <h3>Why Book With Us?</h3>
+            <ul class="booking-benefits">
+              <li><i class="fas fa-check-circle"></i> Best Price Guarantee</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Free Cancellation (48h
+                before)
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Complimentary Breakfast
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Airport Transfer Included
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Welcome Drink on Arrival
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> 24/7 Concierge Service
+              </li>
+            </ul>
+            <div class="booking-contact">
+              <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+              <p>
+                <i class="fas fa-envelope"></i> reservations@ beach.com
+              </p>
+            </div>
+          </div>
+          <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Check-in Date *</label>
+                <input type="date" id="checkin" name="checkin" required />
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out Date *</label>
+                <input type="date" id="checkout" name="checkout" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="roomType">Room Type *</label>
+              <select id="roomType" name="roomType" required>
+                <option value="">Select a room type</option>
+                <option value="Deluxe Sea View - $199/night">
+                  Deluxe Sea View - $199/night
+                </option>
+                <option value="Premium Beach Villa - $399/night">
+                  Premium Beach Villa - $399/night
+                </option>
+                <option value="Family Suite - $299/night">
+                  Family Suite - $299/night
+                </option>
+                <option value="Honeymoon Suite - $499/night">
+                  Honeymoon Suite - $499/night
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="requests">Special Requests</label>
+              <textarea
+                id="requests"
+                name="requests"
+                rows="3"
+                placeholder="Any special requests or requirements..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fab fa-whatsapp"></i> Send Booking Request via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">We're here to help</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>+1 (555) 123-4567</p>
+            <p>+1 (555) 987-6543</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>reservations@ beach.com</p>
+            <p>info@ beach.com</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>123   Beach Road</p>
+            <p>Andaman Islands, Thailand 83110</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-clock"></i>
+            <h3>Reception Hours</h3>
+            <p>24 Hours, 7 Days a Week</p>
+            <p>Always at your service</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><i class="fas fa-umbrella-beach"></i>   Beach</h3>
+            <p>
+              Your ultimate tropical escape. Experience luxury, relaxation, and
+              unforgettable memories at our beachfront  .
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" aria-label="TripAdvisor"
+                ><i class="fab fa-tripadvisor"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#booking">Book Now</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Airport Transfer</a></li>
+              <li><a href="#">Spa & Wellness</a></li>
+              <li><a href="#">Water Sports</a></li>
+              <li><a href="#">Fine Dining</a></li>
+              <li><a href="#">Event Planning</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Subscribe for exclusive offers and updates</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024  Beach Resort. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="admin.html">Admin Panel</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    
+    <a  href="https://wa.me/917416552469"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <!-- Login Overlay -->
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-container">
+            <div class="login-header">
+                <i class="fas fa-umbrella-beach"></i>
+                <h2>Beach Resort</h2>
+                <p>Admin Login</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </form>
+            <div class="login-footer">
+                <a href="#home" id="guestLink">Continue as Guest</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Login System
+        document.addEventListener('DOMContentLoaded', function() {
+            const sessionToken = sessionStorage.getItem('adminToken');
+            const loginOverlay = document.getElementById('loginOverlay');
+            const loginForm = document.getElementById('loginForm');
+            const guestLink = document.getElementById('guestLink');
+
+            // Check if user is logged in
+            if (sessionToken) {
+                window.location.href = 'admin.html';
+                return;
+            }
+
+            // Show login overlay
+            loginOverlay.style.display = 'flex';
+
+            // Handle login
+            loginForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const username = document.getElementById('username').value.trim();
+                const password = document.getElementById('password').value;
+
+                try {
+                    const res = await fetch('/api/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username, password })
+                    });
+                    const data = await res.json();
+                    
+                    if (data.success) {
+                        sessionStorage.setItem('adminToken', data.token);
+                        window.location.href = 'admin.html';
+                    } else {
+                        alert('Invalid credentials. Try admin/admin123');
+                    }
+                } catch (err) {
+                    alert('Login error. Please try again.');
+                }
+            });
+
+            // Continue as guest
+            guestLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                loginOverlay.style.display = 'none';
+            });
+        });
+    </script>
+  </body>
+</html>

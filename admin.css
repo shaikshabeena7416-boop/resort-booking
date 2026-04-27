@@ -1,0 +1,652 @@
+/* ===== Admin Panel Styles ===== */
+.admin-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+}
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.admin-sidebar {
+    width: 260px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    position: fixed;
+    height: 100vh;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-header h2 i {
+    color: #00b4d8;
+}
+
+.sidebar-nav {
+    padding: 20px 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 25px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.nav-item.active {
+    background: rgba(0, 180, 216, 0.1);
+    color: #00b4d8;
+    border-left-color: #00b4d8;
+}
+
+.nav-item i {
+    width: 20px;
+    text-align: center;
+}
+
+.badge {
+    background: #ff4757;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    margin-left: auto;
+}
+
+/* ===== Main Content ===== */
+.admin-main {
+    flex: 1;
+    margin-left: 260px;
+    padding: 30px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-header h1 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #c82333;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.admin-user i {
+    font-size: 1.5rem;
+}
+
+/* ===== Dashboard Stats ===== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card > i {
+    font-size: 2.5rem;
+    color: #00b4d8;
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 180, 216, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-info h3 {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 0 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.stat-info p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+/* ===== Tabs ===== */
+.admin-tab {
+    display: none;
+}
+
+.admin-tab.active {
+    display: block;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.tab-header h2 {
+    font-size: 1.5rem;
+    color: #1a1a2e;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== Messages ===== */
+.messages-container {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 25px;
+}
+
+.messages-list {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.message-item {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+
+.message-item:hover {
+    background: #f8f9fa;
+}
+
+.message-item:last-child {
+    border-bottom: none;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.message-sender {
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.message-time {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.message-content {
+    color: #555;
+    line-height: 1.5;
+}
+
+.booking-item {
+    border-left: 4px solid #28a745;
+    background: #f8fff8;
+}
+
+.booking-status {
+    background: #28a745;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.help-text {
+    font-size: 0.85rem !important;
+    margin-top: 10px !important;
+    opacity: 0.7;
+}
+
+/* ===== Message Reply ===== */
+.message-reply {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.message-reply h3 {
+    margin: 0 0 20px;
+    color: #1a1a2e;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #00b4d8;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: #0077b6;
+    border: 2px solid #0077b6;
+}
+
+.btn-secondary:hover {
+    background: #0077b6;
+    color: white;
+}
+
+.btn-danger {
+    background: #ff4757;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #e84148;
+}
+
+.upload-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-btn input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+/* ===== Rooms Admin ===== */
+.rooms-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.room-admin-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.room-admin-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.room-admin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-admin-content {
+    padding: 25px;
+}
+
+.room-admin-content h3 {
+    margin: 0 0 15px;
+    color: #1a1a2e;
+    font-size: 1.3rem;
+}
+
+.room-admin-content p {
+    color: #666;
+    margin: 0 0 15px;
+    font-size: 0.9rem;
+}
+
+.room-form-group {
+    margin-bottom: 15px;
+}
+
+.room-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.room-form-group input,
+.room-form-group textarea,
+.room-form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    transition: border-color 0.3s;
+}
+
+.room-form-group input:focus,
+.room-form-group textarea:focus,
+.room-form-group select:focus {
+    outline: none;
+    border-color: #00b4d8;
+}
+
+.room-features-edit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.feature-tag {
+    background: #e8f4f8;
+    color: #0077b6;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.feature-tag i {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.feature-tag i:hover {
+    opacity: 1;
+}
+
+.add-feature {
+    background: #f0f0f0;
+    color: #666;
+    cursor: pointer;
+}
+
+.add-feature:hover {
+    background: #e0e0e0;
+}
+
+.room-price-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.room-price-input span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0077b6;
+}
+
+.room-price-input input {
+    width: 120px;
+    text-align: right;
+}
+
+/* ===== Gallery Admin ===== */
+.gallery-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-admin-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.gallery-admin-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.gallery-admin-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-admin-item:hover .gallery-admin-overlay {
+    opacity: 1;
+}
+
+.gallery-admin-overlay button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.gallery-admin-overlay button:hover {
+    transform: scale(1.1);
+}
+
+.btn-edit {
+    background: #00b4d8;
+    color: white;
+}
+
+.btn-delete {
+    background: #ff4757;
+    color: white;
+}
+
+.upload-new {
+    border: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.upload-new:hover {
+    border-color: #00b4d8;
+    background: rgba(0, 180, 216, 0.05);
+}
+
+.upload-new i {
+    font-size: 2rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.upload-new span {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+    .messages-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 70px;
+    }
+
+    .sidebar-header h2 span {
+        display: none;
+    }
+
+    .nav-item span {
+        display: none;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .admin-main {
+        margin-left: 70px;
+    }
+}
